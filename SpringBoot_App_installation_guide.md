@@ -42,11 +42,11 @@ Salir de la conexión del servidor escribiendo `exit`. En la misma carpeta donde
 
 Volver a conectarse al servidor y validar que el archivo existe, ejecutando `ls -la`
 
-Es necesario mover el archivo .jar a una nueva carpeta llamada `src`. Para ello creamos la carpeta y movemos el archivo
+Es necesario copiar el archivo .jar a una nueva carpeta llamada `src`. Para ello creamos la carpeta y copiamos el archivo
 
    ```bash
    sudo mkdir src
-   sudo mv 'archivo'.jar /src
+   sudo cp 'archivo'.jar /home/ubuntu/src
    ```
 
 ### Paso 3: Crear archivo service
