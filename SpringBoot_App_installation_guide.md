@@ -40,7 +40,7 @@ Salir de la conexión del servidor escribiendo `exit`. En la misma carpeta donde
 
 ### Paso 2. Reubicar el archivo jar
 
-Volver a conectarse al servidor y validar que el archivo existe, ejecutando `ls -al`
+Volver a conectarse al servidor y validar que el archivo existe, ejecutando `ls -la`
 
 Es necesario mover el archivo .jar a una nueva carpeta llamada `src`. Para ello creamos la carpeta y movemos el archivo
 
@@ -150,16 +150,4 @@ Si muestra mucho contenido pueden usar la tecla `q` para salir.
 
 ## Pasos siguientes
 
-Debemos instalar y configurar el servidor Nginx para usarlo como proxy inverso. Para ello consulta el archivo [NGINX_installtion](/NGINX_installation_guide.md).
-
-
-
-
-
-### Paso 5: Reiniciar una instancia EC2.
-
-En caso de que necesite reiniciar una instancia EC2 ejecute.
-
-   ```bash
-   sudo reboot now
-   ```
+Debemos instalar y configurar el servidor Nginx. Para ello consulta el archivo [NGINX_installtion](/NGINX_installation_guide.md).

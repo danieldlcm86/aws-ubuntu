@@ -97,11 +97,15 @@ Dentro del editor copiamos lo siguiente. Ten en cuenta que el valor de `server_n
 
 - sites-enabled: En este directorio se colocan enlaces simbólicos (también conocidos como "symlinks") a los archivos de configuración de los sitios web que están activos y se están sirviendo actualmente. NGINX lee la configuración de los sitios web desde estos archivos en lugar de los archivos ubicados directamente en sites-available.
 
+Crear enlace con el comando:
+
    ```bash
    sudo ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled
    ```
 
 ### Paso 4. Cambiar la configuración principal de nginx en vim o nano.
+
+Regresamos a la carpeta de configuración de NGINX que se encuentra en la ruta `/etc/nginx` y abrimos el archivo `nginx.conf` en nuestro editor de texto de preferencia (nano o vim)
 
    ```bash
    sudo vi /etc/nginx/nginx.conf
@@ -109,12 +113,19 @@ Dentro del editor copiamos lo siguiente. Ten en cuenta que el valor de `server_n
 
 En la sección `http` verificar que se encuentre la línea `include /etc/nginx/sites-enabled/*;` Si no se encuentra se debe agregar debajo de la línea `include /etc/nginx/conf.d/*.conf;`
 
-### Paso 5. Validar sintaxis
+### Paso 5. Validar sintaxis de configuración
 
 Para validar la sintaxis de las configuraciones de nginx utilizamos:
 
    ```bash
    sudo nginx -t
+   ```
+
+En caso de que todo se encuentre funcionando correctamente debemos obtener por salida el mensaje:
+
+   ```bash
+   nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+   nginx: configuration file /etc/nginx/nginx.conf test is successful
    ```
 
 ### Paso 6. Reiniciar servicio de NGINX
