@@ -137,3 +137,11 @@ En caso de que todo se encuentre funcionando correctamente debemos obtener por s
 ### Paso 7. Probar la App
 
 En el navegador es necesario conectarse utilizando la dirección ip de la instancia y como endpoint las rutas del frontend generadas en html.
+
+## Nota
+
+Siempre podemos reiniciar el sistema Ubuntu para que se reflejen los cambios necesarios
+
+   ```bash
+   sudo systemctl reboot
+   ```

@@ -151,3 +151,11 @@ Si muestra mucho contenido pueden usar la tecla `q` para salir.
 ## Pasos siguientes
 
 Debemos instalar y configurar el servidor Nginx. Para ello consulta el archivo [NGINX_installtion](/NGINX_installation_guide.md).
+
+## Nota
+
+Siempre podemos reiniciar el sistema Ubuntu para que se reflejen los cambios necesarios
+
+   ```bash
+   sudo systemctl reboot
+   ```
